@@ -1,0 +1,36 @@
+echo "# Arduino-Temel-Dersleri-" >> README.md 
+
+
+//ledleri tanımlama
+int kirmizi=8;
+int sari=9;
+int yesil=10;
+
+//led çıkışlarını belirtme
+void setup(){
+  pinMode(kirmizi, OUTPUT);
+  pinMode(sari, OUTPUT);
+  pinMode(yesil, OUTPUT);
+}
+
+//ledlerin nasıl çalışacağını yazma
+void loop(){
+  digitalWrite(kirmizi,HIGH);
+  digitalWrite(sari,LOW);
+  digitalWrite(yesil,LOW);
+  delay(3000);
+  
+  digitalWrite(sari,HIGH);
+  digitalWrite(kirmizi,LOW);
+  digitalWrite(yesil,LOW);
+  delay(1000);
+  
+  digitalWrite(yesil,HIGH);
+  digitalWrite(kirmizi,LOW);
+  digitalWrite(sari,LOW);
+  delay(3000);
+
+
+}
+
+
